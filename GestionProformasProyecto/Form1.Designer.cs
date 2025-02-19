@@ -30,11 +30,12 @@
         {
             button1 = new Button();
             label1 = new Label();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(358, 166);
+            button1.Location = new Point(161, 359);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
@@ -44,19 +45,31 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(332, 50);
+            label1.Location = new Point(179, 75);
             label1.Name = "label1";
             label1.Size = new Size(44, 15);
             label1.TabIndex = 1;
             label1.Text = "Prueba";
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(154, 162);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(82, 19);
+            checkBox1.TabIndex = 2;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(431, 473);
+            Controls.Add(checkBox1);
             Controls.Add(label1);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -67,5 +80,6 @@
 
         private Button button1;
         private Label label1;
+        private CheckBox checkBox1;
     }
 }
